@@ -6,7 +6,7 @@ function index()
     entry({"admin", "services"}, firstchild(), "Services", 44).dependent = false
 
     local page
-    page = entry({"admin", "services", "fileassistant"}, template("fileassistant"), _("file assistant"), 1)
+    page = entry({"admin", "services", "fileassistant"}, template("fileassistant"), _("File Explorer"), 1)
     page.i18n = "base"
     page.dependent = true
     page.acl_depends = { "luci-app-fileassistant" }
